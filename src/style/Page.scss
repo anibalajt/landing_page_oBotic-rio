@@ -2,9 +2,9 @@
 @import "mixins/break";
 @import "./constants/colors";
 
-// .Page-body {
-//   margin-top: 60px;
-// }
+.Page-body {
+  margin-bottom: 160px;
+}
 .HomePage {
   .spotlight {
     position: relative;
@@ -132,6 +132,55 @@
       background-size: cover;
       margin: auto;
       margin-top: 20px;
+    }
+  }
+  .wrapper.row {
+    .wrapperForm {
+      background-color: #d8d7e8;
+      .header {
+        padding: 40px 0px;
+        max-width: 1200px;
+        margin: auto;
+        .title {
+          color: $color-secondary;
+          font-size: 38px;
+          b {
+            color: #000;
+          }
+        }
+        .subTitle {
+          font-size: 24px;
+        }
+        .bgImg {
+          width: 250px;
+          height: 250px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+  .formControl {
+    background-color: #fdf6fa;
+    > div {
+      padding: 40px 0px;
+      max-width: 1200px;
+      margin: auto;
+      .select
+        .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl {
+        margin-top: 24px !important;
+      }
+    }
+
+    &.otherPeople {
+      background-color: #fff;
+      > div {
+        max-width: none;
+        /* display: table; */
+        > div {
+          margin: auto;
+        }
+      }
     }
   }
 }
